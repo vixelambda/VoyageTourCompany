@@ -1,2 +1,2 @@
 # VoyageTourCompany
- full-stack app
+Клиент-серверное фуллстек-приложение "VoyageTourCompany" для поиска и бронирования путевок
