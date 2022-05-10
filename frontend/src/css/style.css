@@ -1,0 +1,184 @@
+/*.container {*/
+/*    border: 2px solid blue;*/
+/*}*/
+
+/*.row {*/
+/*    border: 1px solid red;*/
+/*}*/
+
+.login {
+    background-color: rgba(255,255,255,0.6);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.imgShip {
+    width: 20%;
+    margin: 2em 0;
+}
+
+.header {
+    align-items: center;
+    background-color: coral;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navLink {
+    color:yellowgreen;
+    padding: 10px;
+    padding-inline: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.tours{
+    background-color: coral;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.mid {
+    text-align: center;
+}
+
+.otstup {
+    margin-top: 40px;
+}
+
+.divcell {
+    display: table-cell;
+}
+
+.forform {
+    margin: 2px 0;
+}
+
+.fform {
+    width: 150px;
+}
+
+.mform {
+    width: 200px;
+}
+
+.lform {
+    width: 350px;
+}
+
+.mylink {
+    text-decoration: none;
+    background-color: #FF7100;
+    box-shadow: 0 9px 0 saddlebrown;
+    color: white;
+    padding: 0.7em 1.5em;
+    position: relative;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+}
+
+.mylink:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #cf4f00;
+    cursor: pointer;
+}
+
+.mylink:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.main {
+    text-align: center;
+}
+
+.first {
+    margin-top: 3em;
+}
+
+table {
+    width: 100%;
+    border-radius: 3px;
+}
+
+th { background: #ccc; }
+
+table, th, td {
+    border-collapse: collapse;
+    border: 3px solid orange;
+    vertical-align: top;
+}
+
+.col1 { background: #ccc; }
+.col2 { background: #fff883}
+
+.errors {
+    font-size: 17px;
+}
+
+.butt {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: limegreen;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px darkgreen;
+}
+
+.butt:hover {background-color: #4CAF50}
+
+.butt:active {
+    background-color: #4CAF50;
+    box-shadow: 0 5px darkgreen;
+    transform: translateY(4px);
+}
+
+.menu {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a {
+    text-decoration: none;
+    color: purple;
+    letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+.menu a.active, .menu a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.menu a:before,
+.menu a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    bottom: 0;
+    background: orange;
+    transition: .4s;
+}
+.menu a:hover:before, .menu .active:before {left: 0;}
+.menu a:hover:after, .menu .active:after {right: 0;}
+
+.img-tour {
+    width: 100%;
+}

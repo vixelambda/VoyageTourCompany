@@ -1,0 +1,14 @@
+body {
+    background: url('bg.jpg') fixed;
+    background-size: cover;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(1px);
+}
