@@ -30,7 +30,7 @@ const Registration = () => {
                 email: email,
                 passwordConfirm: passwordConfirm
             };
-            await axios.post("http://vtc-voyage.herokuapp.com/api/auth/registration", body);
+            await axios.post("https://vtc-voyage.herokuapp.com/api/auth/registration", body);
             navigate("/login");
         } catch (err) {
             console.error(err.message);

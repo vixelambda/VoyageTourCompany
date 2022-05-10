@@ -12,7 +12,7 @@ const SearchTour = () => {
     const [date, setDate] = useState("");
     const getTours = async () => {
         try {
-            const response = await axios.get("http://vtc-voyage.herokuapp.com/api/tours");
+            const response = await axios.get("https://vtc-voyage.herokuapp.com/api/tours");
             const jsonData = await response.data;
             setTours(jsonData);
             setAllTours(jsonData)

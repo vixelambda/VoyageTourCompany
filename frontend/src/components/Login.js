@@ -11,7 +11,7 @@ const Login = () => {
         e.preventDefault();
         const body = { username: userName,password: password };
         try {
-            const response = await axios.post("http://vtc-voyage.herokuapp.com/api/auth/login", {
+            const response = await axios.post("https://vtc-voyage.herokuapp.com/api/auth/login", {
                 email: body.username,
                 password: body.password
             }).then(response => {
