@@ -20,7 +20,7 @@ function MyVerticallyCenteredModalUser(props) {
     const getUser = async () => {
         try {
             let token = JSON.parse(localStorage.getItem("user"));
-            await axios.get("http://localhost:8080/api/user/info",{
+            await axios.get("http://vtc-voyage.herokuapp.com/api/user/info",{
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }}).then((response) => {
@@ -54,7 +54,7 @@ function MyVerticallyCenteredModalUser(props) {
                 phone: phone,
                 email: email
             };
-            await axios.post("http://localhost:8080/api/user/info", body, {headers: {
+            await axios.post("http://vtc-voyage.herokuapp.com/api/user/info", body, {headers: {
                     'Authorization': `Bearer ${token}`
                 }}).then((response) => {
                 setUser(response.data);
@@ -129,7 +129,7 @@ const Profile = () => {
     const getUser = async () => {
         try {
             let token = JSON.parse(localStorage.getItem("user"));
-            await axios.get("http://localhost:8080/api/user/info",{
+            await axios.get("http://vtc-voyage.herokuapp.com/api/user/info",{
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }}).then((response) => {

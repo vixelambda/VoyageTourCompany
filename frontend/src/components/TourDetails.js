@@ -9,7 +9,7 @@ function MyVerticallyCenteredModal(props) {
     const getUser = async () => {
         try {
             let token = JSON.parse(localStorage.getItem("user"));
-            await axios.get("http://localhost:8080/api/user/info",{
+            await axios.get("http://vtc-voyage.herokuapp.com/api/user/info",{
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }}).then((response) => {
@@ -22,7 +22,7 @@ function MyVerticallyCenteredModal(props) {
     const bookTour = async () => {
         try {
             let token = JSON.parse(localStorage.getItem("user"));
-            await axios.post("http://localhost:8080/api/user/booking",
+            await axios.post("http://vtc-voyage.herokuapp.com/api/user/booking",
                 {
                     "id": props.tour.id,
                     "start": props.tour.start,
@@ -109,7 +109,7 @@ const TourDetails = () => {
     const [modalShow, setModalShow] = React.useState(false);
     const getTour = async () => {
         try {
-            await axios.get("http://localhost:8080/api/tours/"+id).then((response) => {
+            await axios.get("http://vtc-voyage.herokuapp.com/api/tours/"+id).then((response) => {
                 setImage(response.data.description.img)
                 setTour(response.data);
             })
